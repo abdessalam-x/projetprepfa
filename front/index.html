@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1 class="login-title">Connexion</h1>
+            
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-input" 
+                        placeholder="Entrez votre email"
+                        required
+                    >
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Mot de passe</label>
+                    <div class="password-wrapper">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            class="form-input" 
+                            placeholder="Entrez votre mot de passe"
+                            required
+                        >
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember" class="checkbox-label">Se souvenir de moi</label>
+                </div>
+
+                <button type="submit" class="login-button">Se connecter</button>
+            </form>
+
+            <div class="login-footer">
+                <a href="#" class="footer-link">Mot de passe oublié ?</a>
+                <span class="separator">|</span>
+                <a href="#" class="footer-link">Créer un compte</a>
+            </div>
+
+            <div class="social-login">
+                <p class="social-text">Ou connectez-vous avec</p>
+                <div class="social-buttons">
+                    <button class="social-button google">Google</button>
+                    <button class="social-button facebook">Facebook</button>
+                    <button class="social-button github">GitHub</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
